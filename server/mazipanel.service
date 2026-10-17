@@ -1,0 +1,19 @@
+[Unit]
+Description=maziPanel Backend Daemon & API Engine
+After=network.target network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/mazideveloper/server
+ExecStart=/usr/bin/node /mazideveloper/server/server.js
+Restart=always
+RestartSec=3
+KillMode=process
+Environment=NODE_ENV=production
+Environment=PORT=8080
+LimitNOFILE=65536
+TimeoutStopSec=60
+
+[Install]
+WantedBy=default.target multi-user.target

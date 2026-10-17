@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="favBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#18191f" />
+      <stop offset="100%" stop-color="#0a0b0e" />
+    </linearGradient>
+    <linearGradient id="favSilver" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="50%" stop-color="#e4e4e7" />
+      <stop offset="100%" stop-color="#a1a1aa" />
+    </linearGradient>
+    <linearGradient id="favChrome" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f4f4f5" />
+      <stop offset="100%" stop-color="#52525b" />
+    </linearGradient>
+  </defs>
+
+  <!-- Oval / Squircle Luxury Dark Shield -->
+  <rect x="3" y="3" width="58" height="58" rx="20" fill="url(#favBg)" stroke="url(#favSilver)" stroke-width="2.5" />
+  
+  <!-- Subtle Inner Border -->
+  <rect x="7" y="7" width="50" height="50" rx="16" fill="none" stroke="rgba(255, 255, 255, 0.15)" stroke-width="1" />
+
+  <!-- Monogram 'M' Crisp Geometric Silhouette -->
+  <!-- Left Leg -->
+  <path d="M16 46V18L26 33V46H16Z" fill="url(#favSilver)" />
+  <!-- Right Leg -->
+  <path d="M48 46V18L38 33V46H48Z" fill="url(#favChrome)" />
+  <!-- Center Apex Diamond -->
+  <polygon points="32,20 38,30 32,40 26,30" fill="#ffffff" />
+</svg>

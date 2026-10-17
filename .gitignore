@@ -1,0 +1,60 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+.modules.yaml
+.package-map.json
+.pnpm-workspace-state-v1.json
+
+# Production builds
+dist/
+client/dist/
+
+# Security, Environment and Keys
+/Keys/
+/keys/
+*.pem
+*.key
+*.pub
+jwt.secret
+/data/jwt.secret
+.env
+.env.*
+!.env.example
+
+# Runtime Data, Configurations and Integrations
+/data/*
+!/data/.gitkeep
+*.bak
+
+# Root Runtime Data, Server Instances, Backups and Archives
+/servers/*
+!/servers/.gitkeep
+/backups/*
+!/backups/.gitkeep
+/temp/*
+!/temp/.gitkeep
+logs/
+*.log
+*.log.gz
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+/*.png
+!/logo.png
+
+# OS, IDE and AI Assistants
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+.gemini/
+GEMINI.md
+AGENTS.md
+server/background_runner.vbs
+server/node_modules_dc/
+/mazictl
+
